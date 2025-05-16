@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promedio notas</title>
+  <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <h1>Promedio Notas</h1>
+      <p>
+        <legent class="aspecto">Instroduzca sus notas de cada asigatura para poder calcular la nota promedida</legent>
+      </p>
+      <p><label for="flex">Nota Flex: <input type="number" id="flex" min="1" max="10" required></label></p>
+      <p><label for="grid">Nota Grid: <input type="number" id="grid" min="1" max="10" required></label></p>
+      <p><label for="Java">Nota Java Script:<input type="number" id="java" min="1" max="10" required></label></p>
+      <p><button type="button" onclick="calcular()"> Total nota promedia </button></p>
+      <p id="totalNotaPromedia"> </p>
+    </form>
+  </div>
+
+  <img src="img/OIP-removebg-preview (5).png" alt="foto">
+  <script>
+
+    const FLEX = document.getElementById("flex");
+    const GRID = document.getElementById("grid");
+    const JAVA = document.getElementById("java");
+    const RESULTADO = document.getElementById("totalNotaPromedia");
+
+    console.log(FLEX.value);
+
+    function calcular() {
+      let notasFlex = Number(FLEX.value);
+      let notasGrid = Number(GRID.value);
+      let notasJava = Number(JAVA.value);
+
+
+      let total = notasFlex + notasGrid + notasJava /3;
+
+      RESULTADO.innerHTML = "Tu nota promedia es:" + total;
+
+    }
+  </script>
+
+
+
+</body>
+
+</html>

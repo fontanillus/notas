@@ -1,0 +1,29 @@
+body {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color: bisque;
+width: 90%;
+height: 30%;
+margin: 0 auto;
+}
+
+h1 {
+text-align: center;
+}
+
+.aspecto{
+font-weight: bold;
+}
+
+.container {
+margin: 0 auto;
+border: 5px solid pink;
+text-align: center;
+}
+
+img {
+width: 25%;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
